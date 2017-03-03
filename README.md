@@ -7,3 +7,8 @@ This project contains examples for
 
 The CMake build is mainly taken from:
 https://github.com/ryankurte/efm32-base
+
+
+# Build Status (Travis)
+
+[![Build Status](https://travis-ci.org/LukasWoodtli/FreeRtosExamples.svg?branch=master)](https://travis-ci.org/LukasWoodtli/FreeRtosExamples)

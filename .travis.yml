@@ -1,11 +1,12 @@
 language: c
 
 before_install:
-    - sudo add-apt-repository -y ppa:team-gcc-arm-embedded/ppa
-    - sudo apt-get update
+    - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; sudo add-apt-repository -y ppa:team-gcc-arm-embedded/ppa ; fi
+    - if [[ "$TRAVIS_OS_NAME" == "linux" ]];  sudo apt-get update                                     ; fi
 
 install:
-    - sudo apt-get install -y build-essential gcc-multilib gcc-arm-embedded g++-multilib
+    - if [[ "$TRAVIS_OS_NAME" == "linux" ]];  sudo apt-get install -y build-essential gcc-multilib gcc-arm-embedded g++-multilib ; fi
+    - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; bash -x .install_gcc_arm_embedded_osx.sh ; fi
 
 script:
     - mkdir travis_build
@@ -13,4 +14,7 @@ script:
     - cmake -G "Unix Makefiles" ..
     - make
 
+os:
+- linux
+- osx
 

@@ -8,8 +8,8 @@ install:
     - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y build-essential gcc-multilib gcc-arm-embedded g++-multilib ; fi
     - if [[ "$TRAVIS_OS_NAME" == "osx" ]];   then bash -x .install_gcc_arm_embedded_osx.sh ; fi
 
-brefore_script:
-    -  if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export PATH="$PATH:/usr/local/gcc_arm/gcc-arm-none-eabi-6-2017-q1-update/bin" ; fi
+env:
+    -  if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then PATH="$PATH:/usr/local/gcc_arm/gcc-arm-none-eabi-6-2017-q1-update/bin" ; fi
 
 script:
     - mkdir travis_build

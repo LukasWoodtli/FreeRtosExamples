@@ -62,11 +62,8 @@ include(${BASE_LOCATION}/FreeRTOS/freertos.cmake)
 ##### Files #####
 
 
-
 # projects
 add_subdirectory("source")
-
-
 
 
 

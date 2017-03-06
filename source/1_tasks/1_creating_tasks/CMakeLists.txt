@@ -11,6 +11,7 @@ add_executable(${TARGET} ${SOURCES})
 
 target_link_libraries(${TARGET} ${LIBS})
 
-include(${BASE_LOCATION}/../../../toolchain/post-build.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/../../../toolchain/post-build.cmake)
 
-source_group("" FILES ${SOURCES})
+source_group("src" FILES ${SOURCES})
+

@@ -7,13 +7,22 @@
 #include "semphr.h"
 #include "croutine.h"
 
-#include "basic_io.h"
 
 #include "em_chip.h"
 #include "bsp.h"
 #include "bsp_trace.h"
 
 #include "sleep.h"
+
+
+void vPrintString(char const * const str) {
+    char const * i = str;
+    
+    while (*i != '\0') {
+        ITM_SendChar(*i);
+        i++;
+    }
+}
 
 
 #define mainDELAY_LOOP_COUNT		( 0xfffff )

@@ -67,10 +67,7 @@ add_subdirectory("source")
 
 
 
-##### Post build #####
 
-# Add post build commands
-include(${BASE_LOCATION}/toolchain/post-build.cmake)
 
 # Add JLink commands
 include(${BASE_LOCATION}/toolchain/jlink.cmake)

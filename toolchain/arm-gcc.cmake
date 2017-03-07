@@ -11,9 +11,14 @@ set(CMAKE_SYSTEM_NAME Generic)
 # Set processor type
 set(CMAKE_SYSTEM_PROCESSOR arm)
 
-# Set compiler paths. We force set so it doesn't run tests
-CMAKE_FORCE_C_COMPILER(${COMPILER_PREFIX}arm-none-eabi-gcc GNU)
-CMAKE_FORCE_CXX_COMPILER(${COMPILER_PREFIX}arm-none-eabi-g++ GNU)
+# taken from https://github.com/MOSAIC-LoPoW/dash7-ap-open-source-stack/blob/master/stack/cmake/toolchains/gcc-arm-embedded.cmake
+set(CMAKE_C_COMPILER   "arm-none-eabi-gcc")
+set(CMAKE_CXX_COMPILER "arm-none-eabi-g++")
+# without these cmake tries to compile/link a test and fails on _exit
+# this _was_ suppressed by the now deprecated FORCE versions
+set(CMAKE_C_COMPILER_WORKS   1)
+set(CMAKE_CXX_COMPILER_WORKS 1)
+
 set(CMAKE_ASM_COMPILER ${COMPILER_PREFIX}arm-none-eabi-g++)
 
 # Set other tools

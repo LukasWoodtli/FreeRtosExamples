@@ -13,6 +13,13 @@
 # Set minimum CMake version
 cmake_minimum_required(VERSION 2.8.4)
 
+
+# Set build
+if(NOT CMAKE_BUILD_TYPE)
+set(CMAKE_BUILD_TYPE DEBUG)
+endif()
+
+
 # Set efm32-base project location
 set(BASE_LOCATION ${CMAKE_CURRENT_LIST_DIR})
 
@@ -35,11 +42,6 @@ add_definitions(-DGCC_ARMCM3)
 add_definitions(-DDEBUG)
 add_definitions(-DDEBUG_EFM)
 
-
-# Set build
-if(NOT CMAKE_BUILD_TYPE)
-set(CMAKE_BUILD_TYPE DEBUG)
-endif()
 
 ##### Modules #####
 

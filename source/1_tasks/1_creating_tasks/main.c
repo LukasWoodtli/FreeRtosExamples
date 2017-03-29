@@ -133,14 +133,14 @@ int main(void)
 
   xTaskCreate(vTask1,   // pointer to the task function
               "Task 1", // task name
-              240,      // stack size in words
+              40,      // stack size in words
               NULL,     // stack parameter (not used here)
               1,        // priority
               NULL);    // task handle (not used)
 
     xTaskCreate(vTask2,   // pointer to the task function
                 "Task 2", // task name
-                240,      // stack size in words
+                40,      // stack size in words
                 NULL,     // stack parameter (not used here)
                 1,        // priority
                 NULL);

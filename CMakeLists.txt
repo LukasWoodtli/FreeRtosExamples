@@ -28,11 +28,8 @@ include(${BASE_LOCATION}/toolchain/arm-gcc.cmake)
 
 ##### Project Setup #####
 
-# Set our output target
-set(TARGET FreeRtosExamples)
-
 # Configure project and languages
-project(${TARGET} C CXX ASM)
+project(FreeRtosExamples C CXX ASM)
 
 # Set device
 set(DEVICE EFM32TG840F32)

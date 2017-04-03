@@ -1,3 +1,9 @@
+
+# Configure project and languages
+set(TARGET CreatingTasks)
+
+project(${TARGET} C CXX ASM)
+
 # Add project sources
 set(SOURCES
   main.c

@@ -91,12 +91,21 @@ void vTask1(void *pvParameters)
     }
 }
 
+void vTask3(void *pvParameters);
 
 void vTask2(void *pvParameters)
 {
     const char *pcTaskName = "Task 2 is running\n";
     volatile unsigned long ul;
     
+    // it's also possible to create tasks in other tasks
+    xTaskCreate(vTask3,   // pointer to the task function
+                    "Task 3", // task name
+                    40,      // stack size in words
+                    NULL,     // stack parameter (not used here)
+                    1,        // priority
+                    NULL);
+
     for (;;)
     {
         // Print task name
@@ -108,6 +117,24 @@ void vTask2(void *pvParameters)
         }
     }
 }
+
+void vTask3(void *pvParameters)
+{
+    const char *pcTaskName = "Task 3 is running\n";
+    volatile unsigned long ul;
+
+    for (;;)
+    {
+        // Print task name
+        vPrintString(pcTaskName);
+
+        // simple delay
+        for (ul = 0; ul < mainDELAY_LOOP_COUNT; ul++) {
+            // just loop for delay
+        }
+    }
+}
+
 
 int main(void)
 {

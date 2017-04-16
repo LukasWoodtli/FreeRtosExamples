@@ -86,11 +86,7 @@ void vTask(void *pvParameters)
         // Print task name
         vPrintString(pcTaskName);
         
-
-        // simple delay
-        for (ul = 0; ul < mainDELAY_LOOP_COUNT; ul++) {
-            // just loop for delay
-        }
+        vTaskDelay(250 / portTICK_RATE_MS);
     }
 }
 

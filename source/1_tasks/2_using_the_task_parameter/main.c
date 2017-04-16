@@ -84,8 +84,12 @@ void vTask(void *pvParameters)
     for (;;)
     {
         // Print task name
+    	vPrintString("In function: ");
+    	vPrintString(__FUNCTION__);
+    	vPrintString("\n");
         vPrintString(pcTaskName);
         
+
         // simple delay
         for (ul = 0; ul < mainDELAY_LOOP_COUNT; ul++) {
             // just loop for delay

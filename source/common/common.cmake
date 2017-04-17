@@ -8,7 +8,8 @@
 include_directories(${CMAKE_CURRENT_LIST_DIR})
 
 # Source files
-set(COMMON_SOURCES ${CMAKE_CURRENT_LIST_DIR}/low_power_tick_management.c)
+set(COMMON_SOURCES ${CMAKE_CURRENT_LIST_DIR}/low_power_tick_management.c
+                   ${CMAKE_CURRENT_LIST_DIR}/print.c)
 
 ##### Outputs #####
 

@@ -7,7 +7,6 @@ project(${TARGET} C CXX ASM)
 # Add project sources
 set(SOURCES
   main.c
-	low_power_tick_management.c
 )
 
 ##### Outputs #####

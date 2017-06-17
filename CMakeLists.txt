@@ -15,9 +15,7 @@ cmake_minimum_required(VERSION 2.8.4)
 
 
 # Set build
-if(NOT CMAKE_BUILD_TYPE)
 set(CMAKE_BUILD_TYPE DEBUG)
-endif()
 
 
 # Set efm32-base project location

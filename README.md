@@ -25,7 +25,7 @@ https://github.com/ryankurte/efm32-base
 | Example 3. | Experimenting with priorities                         |   ✓  |
 | Example 4. | Using the Blocked state to create a delay             |   ✓  |
 | Example 5. | Converting the example tasks to use vTaskDelayUntil() |   ✓  |
-| Example 6. | Combining blocking and non-blocking tasks             |      |
+| Example 6. | Combining blocking and non-blocking tasks             |   ✓  |
 | Example 7. | Defining an idle task hook function                   |      |
 | Example 8. | Changing task priorities                              |      |
 | Example 9. | Deleting tasks                                        |      |

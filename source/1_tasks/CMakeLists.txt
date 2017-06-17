@@ -9,3 +9,6 @@ add_subdirectory("4_blocked_state")
 
 add_subdirectory("5_task_delay_until")
 
+add_subdirectory("6_combining_blocking_non_blocking")
+
+

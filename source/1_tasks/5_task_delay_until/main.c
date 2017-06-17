@@ -24,6 +24,9 @@ void vTask(void *pvParameters)
     
     pcTaskName = (char*)pvParameters;
 
+    // The variable must be initialized this way once before use!
+    xLastWakeTime = xTaskGetTickCount();
+
     for (;;)
     {
         // Print task name

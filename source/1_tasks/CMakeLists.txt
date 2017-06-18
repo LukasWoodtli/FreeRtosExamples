@@ -11,4 +11,5 @@ add_subdirectory("5_task_delay_until")
 
 add_subdirectory("6_combining_blocking_non_blocking")
 
+add_subdirectory("7_idle_task_hook")
 

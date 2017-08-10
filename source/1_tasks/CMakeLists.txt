@@ -15,3 +15,5 @@ add_subdirectory("7_idle_task_hook")
 
 add_subdirectory("8_changing_task_priority")
 
+add_subdirectory("9_deleting_task")
+

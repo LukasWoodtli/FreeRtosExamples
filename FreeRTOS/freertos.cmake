@@ -13,7 +13,7 @@ FILE(GLOB FREERTOS_SOURCES ${CMAKE_CURRENT_LIST_DIR}/Source/*.c)
 FILE(GLOB FREERTOS_PORTABLE_SOURCES ${CMAKE_CURRENT_LIST_DIR}/Source/portable/GCC/ARM_CM3/*.c)
 
 
-set(FREERTOS_MEM_MANG ${CMAKE_CURRENT_LIST_DIR}/Source/portable/MemMang/heap_1.c)
+set(FREERTOS_MEM_MANG ${CMAKE_CURRENT_LIST_DIR}/Source/portable/MemMang/heap_2.c)
 ##### Outputs #####
 
 # Create emlib library

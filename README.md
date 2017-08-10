@@ -27,8 +27,8 @@ https://github.com/ryankurte/efm32-base
 | Example 5. | Converting the example tasks to use vTaskDelayUntil() |   ✓  |
 | Example 6. | Combining blocking and non-blocking tasks             |   ✓  |
 | Example 7. | Defining an idle task hook function                   |   ✓  |
-| Example 8. | Changing task priorities                              |      |
-| Example 9. | Deleting tasks                                        |      |
+| Example 8. | Changing task priorities                              |   ✓  |
+| Example 9. | Deleting tasks                                        |   ✓  |
 
 
 ## Chapter 2 Queue Management

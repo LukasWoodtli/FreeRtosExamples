@@ -36,7 +36,7 @@ https://github.com/ryankurte/efm32-base
 | Example     | Description                                                       | Done |
 |-------------|-------------------------------------------------------------------|------|
 | Example 10. | Blocking when receiving from a queue                              |   ✓  |
-| Example 11. | Blocking when sending to a queue or sending structures on a queue |      |
+| Example 11. | Blocking when sending to a queue or sending structures on a queue |   ✓  |
 
 
 ## Chapter 3 Interrupt Management

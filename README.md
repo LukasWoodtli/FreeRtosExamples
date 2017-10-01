@@ -45,7 +45,7 @@ https://github.com/ryankurte/efm32-base
 |-------------|--------------------------------------------------------------------|------|
 | Example 12. | Using a binary semaphore to synchronize a task with an interrupt   |   ✓  |
 | Example 13. | Using a counting semaphore to synchronize a task with an interrupt |   ✓  |
-| Example 14. | Sending and receiving on a queue from within an interrupt          |      |
+| Example 14. | Sending and receiving on a queue from within an interrupt          |   ✓  |
 
 
 ## Chapter 4 Resource Management

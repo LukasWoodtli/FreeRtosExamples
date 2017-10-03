@@ -1,7 +1,9 @@
 # FreeRTOS Examples
 
 This project contains examples for
-[FreeRTOS](http://www.freertos.org/Documentation/RTOS_book.html)
+[Using the FreeRTOS Real Time Kernel - A Practical Guide](http://www.freertos.org/Documentation/RTOS_book.html).
+
+
 
 # Build (cmake)
 

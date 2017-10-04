@@ -7,3 +7,5 @@ add_subdirectory("1_tasks")
 add_subdirectory("2_queues")
 
 add_subdirectory("3_interrupts")
+
+add_subdirectory("4_resources")

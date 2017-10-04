@@ -54,5 +54,5 @@ https://github.com/ryankurte/efm32-base
 
 | Example     | Description                                           | Done |
 |-------------|-------------------------------------------------------|------|
-| Example 15. | Rewriting vPrintString() to use a semaphore           |      |
+| Example 15. | Rewriting vPrintString() to use a semaphore           |   ✓  |
 | Example 16. | Re-writing vPrintString() to use a gatekeeper task    |      |

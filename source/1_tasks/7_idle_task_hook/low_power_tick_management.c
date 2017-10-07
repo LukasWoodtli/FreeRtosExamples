@@ -99,6 +99,15 @@ void vApplicationIdleHook(void)
 }*/
 #endif
 
+
+#if (configUSE_TICK_HOOK == 1)
+void vApplicationTickHook( void )
+{
+    // nothing to do here
+}
+#endif
+
+
 /* Including only if tickless_idle is set to 1 or ( configUSE_TICKLESS_IDLE is set to 0  and  configUSE_SLEEP_MODE_IN_IDLE is set to 1 ) and EM2 or EM3 mode is choosed
  * in other hand standard Cortex M3 FreeRTOS functions are used. */
 #if (((configUSE_TICKLESS_IDLE == 1) || ((configUSE_TICKLESS_IDLE == 0) && (configUSE_SLEEP_MODE_IN_IDLE == 1))) && (configSLEEP_MODE == 2 || configSLEEP_MODE == 3))

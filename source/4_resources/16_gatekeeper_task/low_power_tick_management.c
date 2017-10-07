@@ -100,10 +100,13 @@ void vApplicationIdleHook(void)
 
 
 #if (configUSE_TICK_HOOK == 1)
+
+/* Defined own vApplicationTickHook in main.c
 void vApplicationTickHook( void )
 {
-    // nothing to do here
+
 }
+*/
 #endif
 
 

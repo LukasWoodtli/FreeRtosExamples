@@ -1,7 +1,8 @@
 # FreeRTOS Examples
 
 This project contains examples for
-[Using the FreeRTOS Real Time Kernel - A Practical Guide](http://www.freertos.org/Documentation/RTOS_book.html).
+[Using the FreeRTOS™ Real Time Kernel - A Practical Guide](http://www.freertos.org/Documentation/RTOS_book.html)
+by Richard Barry.
 
 
 
@@ -55,4 +56,4 @@ https://github.com/ryankurte/efm32-base
 | Example     | Description                                           | Done |
 |-------------|-------------------------------------------------------|------|
 | Example 15. | Rewriting vPrintString() to use a semaphore           |   ✓  |
-| Example 16. | Re-writing vPrintString() to use a gatekeeper task    |      |
+| Example 16. | Re-writing vPrintString() to use a gatekeeper task    |   ✓  |

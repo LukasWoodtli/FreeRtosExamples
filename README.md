@@ -16,6 +16,10 @@ https://github.com/ryankurte/efm32-base
 
 [![Build Status](https://travis-ci.org/LukasWoodtli/FreeRtosExamples.svg?branch=master)](https://travis-ci.org/LukasWoodtli/FreeRtosExamples)
 
+# Personal Notes
+
+[Here](http://lukaswoodtli.github.io/freertos.html) are some of my notes for FreeRTOS.
+
 
 # Examples
 

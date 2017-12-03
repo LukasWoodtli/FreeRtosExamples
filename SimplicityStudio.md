@@ -20,7 +20,7 @@ Select the *FreeRtosExamplesBuild* folder.
 
 ## Running and Debugging
 
-After building the examples can be run:
+After building, the examples can be run:
 
 *Run > Debug Configuration*
 
@@ -44,8 +44,8 @@ In *Tracing*:
 
 - Activate *Enable tracing*
 - *Core clock* 14.000000 *MHz*
-- "SWO clock":
+- *SWO clock*:
     - disable *Auto*
     - 875 *kHz*
 
-> If breakpoints don't work check if the binaries contain debug symbols
+> If breakpoints don't work, check if the binaries contain debug symbols

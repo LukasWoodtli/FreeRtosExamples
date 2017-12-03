@@ -8,7 +8,7 @@ wget -O gcc-arm-none-eabi-6-2017-q1-update-mac.tar.bz2 https://developer.arm.com
 tar xf gcc-arm-none-eabi-6-2017-q1-update-mac.tar.bz2
 
 # Make a place to install it to
-mkdir /usr/local/gcc_arm
+sudo mkdir /usr/local/gcc_arm
 
 # Move the unzipped stuff there.
 sudo mv gcc-arm-none-eabi-6-2017-q1-update/ /usr/local/gcc_arm/

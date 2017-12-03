@@ -11,7 +11,7 @@ tar xf gcc-arm-none-eabi-6-2017-q1-update-mac.tar.bz2
 mkdir /usr/local/gcc_arm
 
 # Move the unzipped stuff there.
-mv gcc-arm-none-eabi-6-2017-q1-update/ /usr/local/gcc_arm/
+sudo mv gcc-arm-none-eabi-6-2017-q1-update/ /usr/local/gcc_arm/
 
 # Change your PATH by appending the "bin" folder of the folder
 # NOTE:
